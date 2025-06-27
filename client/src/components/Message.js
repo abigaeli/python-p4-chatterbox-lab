@@ -4,7 +4,7 @@ import EditMessage from "./EditMessage";
 function Message({ message, currentUser, onMessageDelete, onUpdateMessage }) {
   const [isEditing, setIsEditing] = useState(false);
 
-  const { id, username, body, created_at: createdAt } = message;
+  const { id, username, body, createdAt } = message;
 
   const timestamp = new Date(createdAt).toLocaleTimeString();
 
